@@ -1,0 +1,238 @@
+*
+{
+    padding: 0;
+    margin: 5;
+
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: flex-start;
+    background-image: url(image.9.webp);
+    background-size: cover;
+
+}
+.menu-navbar
+{
+    height: 60px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: rgb(255, 255, 255);
+    color: rgb(22, 21, 21);
+    text-align: center;
+    
+    
+}
+.menu-navbar ul
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    cursor: pointer;
+
+}
+.menu-navbar ul li
+{
+    display: inline-block;
+    list-style: none;
+    padding: 20px 10px;
+    margin: 0;
+    position: relative;
+    text-decoration: underline;
+    font-size: 18px;
+}
+.menu-navbar ul li a
+{
+    
+    text-decoration: none;
+    color:rgb(6, 5, 5);
+    text-align: center;
+    font-family: Arial;
+    width: 0px;
+    padding: 19px 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.99s ease;
+}
+.menu-navbar ul li a:hover
+{
+background-color: rgb(68, 102, 255);
+border-radius: 20px;
+
+}
+.menu-navbar ul li
+{
+    font-size: 14px;
+}
+
+h2
+{
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+
+}
+.reg input[type=text], input[type=email], input[type=tel], input[type=number], input[type=date], input[type=password], input[type=checkbox]
+{
+    width: 78%;
+    padding: 8px 45px;
+    margin: 0px 10%;
+    display: block;
+    border: 1.5px solid rgb(32, 31, 31);
+    color: #000;
+    box-sizing: border-box;
+    border-radius: 9px;
+
+
+}
+.lab-1[type=checkbox]
+{
+    font-family: Arial;
+    display: inline-flex;
+    color: beige;
+    text-align: right;
+
+
+}
+.lab-1
+{
+    color: rgb(31, 31, 29);
+    font-size: 20px;
+    padding: auto;
+}
+
+
+.lab
+{
+    margin-left: 10%;
+    padding:  0px;
+    display: block;
+    color: rgb(255, 255, 255);
+    font-family: Arial;
+    text-align: left;
+    font-size: 18px;
+    
+   
+}
+.reg
+{
+    width: 45%;
+    background: rgb(93, 125, 146);
+    padding: 0px 40px 10px;
+    border: 1px solid rgb(60, 22, 95);
+    margin:10px auto 0;
+    border-radius: 5px;
+}
+select
+{ 
+    font-size: large;
+    width: 50%;
+    padding: 8px 25px;
+    margin: 15px 12%;
+    display: block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+h1
+{
+    color: white;
+    text-align: center;
+}
+#main
+{
+    width: 38%;
+    background: rgb(80, 132, 180);
+    padding: 0px 35px 6%;
+    border: 1px solid rgb(60, 22, 95);
+    margin: 7% auto;
+    border-radius: 5px;
+    
+}
+#login-form 
+{
+    
+    align-self: flex-start;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+#login-form input[type=submit], input[type=text], input[type=password]
+{
+    width: 50%;
+    padding: 9px 38px;
+    margin: 15px 9%;
+    display: block;
+    border: 1.5px solid rgb(14, 13, 13);
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border-radius: 9px;
+    font-size: medium;
+}
+#login-form input[type=submit]
+{
+    background-color: rgb(253, 253, 255);
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+#login-form input[type=submit]:hover
+{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    background-color: rgb(16, 17, 17);
+    
+}
+ .container
+{
+    display: flex; 
+    background-color: blueviolet;
+    width: 100%;
+    margin: 10 auto;
+    display: inline-flex; 
+    
+ }
+.container .img-container{
+    background-image: url(img2.png);
+
+    background-size: cover;
+    padding: 25%;
+    margin: 8px;
+    display: flex;
+}
+ .txt-container{
+    padding: 8%;
+    background: #070707;
+    margin: 0px;
+    display: flex;
+    float: left;
+    color: white;
+    
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+          
+}
+.form{
+    font-size: 30px;
+    padding: 10px;
+    color: white;
+}
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 10px;
+  }
+  
+  .td, th {
+    border: px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    
+  }
+  .hd
+  {
+    background-color: #dddddd;
+  }
+  
+ 

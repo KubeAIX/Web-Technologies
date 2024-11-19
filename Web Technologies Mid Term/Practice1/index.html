@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/fb28ff56cd.js" crossorigin="anonymous"></script>
+    <title>Simple Login Page</title>
+</head>
+
+<body>
+    <h1 align="center">This Login Form</h1>
+    <div class="container">
+        <div class="left">
+            <h1>Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i> code.hawks24@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +923001595679</p>
+            <div class="icons">
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="/Practice1/CV/index.html" target="_blank" class="Open-btn">Open CV</a>
+        </div>
+        <form class="right" id="contactForm">
+            <label for="username">Username:</label>
+            <input type="text" name="User " id="username" autocomplete="off" class="form-control"
+                placeholder="Enter username (2-20 characters)" required minlength="2" maxlength="20">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" autocomplete="off" class="form-control"
+                placeholder="Enter Your Email" required>
+
+            <label for="comment">Message:</label>
+            <textarea id="comment" placeholder="Your message" required></textarea>
+
+            <button class="send-btn" type="submit">Send</button>
+        </form>
+    </div>
+    <div class="footer">
+        Copyright ©2024 All rights reserved | This is made by Abdul Ahad.
+    </div>
+
+    <div id="successMessage" style="display:none; color: green; text-align: center; margin-top: 20px;">
+        Your message has been sent successfully!
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Get values
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const comment = document.getElementById('comment').value;
+
+            // Basic validations
+            if (username.length < 2 || username.length > 20) {
+                alert('Username must be between 2 and 20 characters.');
+                return;
+            }
+            console.log('Form submitted:', { username, email, comment });
+
+            // Show success message
+            document.getElementById('successMessage').style.display = 'block';
+            document.getElementById('contactForm').reset();
+        });
+    </script>
+</body>
+
+</html>
